@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 修改 .husky/pre-commit hook 文件的触发命令：
+npx lint-staged
