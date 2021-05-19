@@ -4,6 +4,11 @@
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -21,6 +26,7 @@
     "@types/node": "^15.3.0",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
+    "commitizen": "^4.2.4",
     "eslint": "^7.26.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
